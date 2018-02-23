@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         format = { "pretty", "json:target/cucumber.json" },
         glue = "nl.alten.endegraaf.bdd.steps",
-        features = "src/test/resources/cucumber/workflow.feature"
+        features = "classpath:cucumber/workflow.feature"
 )
 
 public class RunWorkflowTest {

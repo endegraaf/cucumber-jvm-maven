@@ -1,8 +1,10 @@
-cucumber-jvm-maven
-==================
+# Cucumber-JVM Quickstart with examples table
+This is a quickstart template for Cucumber JVM based on [czeczotka](https://github.com/czeczotka/cucumber-jvm-maven).
 
-Cucumber JVM with Maven application.
+## folder structure
 
-See my blog for details:
+- The subfolder `src/main` contains production code
+- The subfolder `src/test` contains automated test code.
 
-http://blog.czeczotka.com/2014/07/22/cucumber-jvm-with-maven-in-minutes/
+The feature files (Cucumber files) are stored in `src/test/resources`.  
+
