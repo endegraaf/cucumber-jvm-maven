@@ -5,12 +5,13 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import nl.alten.endegraaf.openkm.database.DbClient;
 import nl.alten.endegraaf.openkm.rest.RestClient;
+import nl.alten.endegraaf.openkm.soap.SoapClient;
 import org.junit.Assert;
 
 public class WorkflowSteps {
 
     private RestClient restClient;
-    private DbClient dbClient;
+    private SoapClient soapClient;
     private int actualAmountOfSubfolders;
 
     @Given("^I have a session")
@@ -19,8 +20,7 @@ public class WorkflowSteps {
     }
     @Given("^There are no folders under the root folder")
     public void there_are_no_subfolders_under_the_root_folder() {
-        dbClient = new DbClient();
-        dbClient.removeAllSubFoldersFromRoot();
+
     }
 
 
