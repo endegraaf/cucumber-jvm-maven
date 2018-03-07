@@ -10,3 +10,11 @@ Feature: Calculator
     Examples:
         | condition1 | condition2     | result1                |
         | initial    | secondary      | started successfully   |
+
+  Scenario Outline: Make new folders under the root folder
+    Given There are no folders under the root folder
+    When I start a workflow with <condition1> and <condition2>
+    Then the result should be <result1>
+    Examples:
+      | condition1 | condition2     | result1                |
+      | initial    | secondary      | started successfully   |
